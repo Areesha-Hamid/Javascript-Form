@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    width: 100%;
+    background-color: var(--body-clr);
+    height: auto;
+    position: relative;
+    padding: 2rem;
+}
+
+.light{
+    --text-light : #282828;
+    --body-clr : #4682b4;
+    --form-clr : #fdf5e696;
+
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    margin-top: 5rem;
+    color: #FDF5E6;
+}
+
+.form{
+    width: 50vw;
+    height: auto;
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 4rem;
+    background-color: var(--form-clr);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+.label{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 3px;
+}
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    width: 20rem;
+    margin-bottom: 2.5rem;
+}
+.input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.input input{
+    padding: 0.6rem 0.2rem;
+    font-size: 1.3rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid #FDF5E6;
+    outline: none;
+    margin-top: 0.6rem;
+}
+.submit-btn{
+    padding: 0.5rem 0.9rem;
+    border: none;
+    outline: none;
+    color: #FDF5E6;
+    background-color: var(--body-clr);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.fa-check{
+    color: forestgreen;
+    
+}
+.fa-xmark{
+    color: red;
+}
+.fa-eye{
+    color: #FDF5E6;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.success,.error,
+.success1,.error1,
+.success2,.error2,
+.success3,.error3,
+.success4,.error4{
+    display: none;
+}
+
+.modal{
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: none;
+    background-color: #FDF5E6;
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+#close-btn{
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+   font-size: 1.5rem;
+   color: #333;
+   cursor: pointer;
+}
+
+#close-btn:hover{
+    color: var(--body-clr);
+}
+
+.modal h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+.modal p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.fa-circle-info{
+    color: var(--body-clr);
+    font-size: 1.4rem;
+}
+
+.input4{
+    margin-left: 2.2rem;
+}
+
+@media only screen and (max-width : 800px){
+    .form{
+        width: 90%;
+        padding: 5rem;
+    }
+    h1{
+        padding: 0;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .input4{
+        margin: 0;
+    }
+    .modal{
+        width: 90%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .form{
+        width: 95%;
+        padding: 5rem 2rem;
+    }
+    .input input{
+        width: 90%;
+    }
+    .info{
+        width: 13rem;
+        font-size: 1rem;
+    }
+    .label{
+        font-size: 1.1rem;
+    }
+    
+}

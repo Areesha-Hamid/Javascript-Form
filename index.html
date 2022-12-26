@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+</head>
+<body class="flex light">
+    
+    <header class="header">
+        <h1>Create your free account</h1>
+    </header>
+    <div class="modal">
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+        <h2>Thankyou for joining us!</h2>
+        <p>With this account you you will be able to access to our exclusive newsletter,blog posts and so much more.</p>
+    </div>
+    <main class="form_container">
+        <form class="form flex">
+            <!-- First name -->
+            <div class="name flex">
+            <div class="input1">
+                <div class="fname-text label">
+                    <label for="fname" >first name</label>
+                    <div class="error">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="success">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="fname-input input">
+                    <input type="text" id="fname">
+                </div>
+                <div class="fname-info info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Only contain alphabets and must between 3 to 20 characters.</p>
+                </div>
+            </div>
+            <!-- Second name -->
+            <div class="input2">
+                <div class="lname-text label">
+                    <label for="lname" >last name</label>
+                    <div class="error1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="success1">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="lname-input input">
+                    <input type="text" id="lname">
+                </div>
+                <div class="lname-info info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Only contain alphabets and must between 3 to 20 characters.</p>
+                </div>
+            </div>
+        </div>
+            <!-- email -->
+            <div class="input3">
+                <div class="email-text label">
+                    <label for="email" >Email</label>
+                    <div class="error2">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="success2">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="email-input input">
+                    <input type="email" id="email">
+                </div>
+                <div class="email-info info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Enter a valid email address.</p>
+                </div>
+            </div>
+          
+            <!-- password -->
+            <div class="input4">
+                <div class="pass-text label">
+                    <label for="pass">password</label>
+                    <div class="error3">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="success3">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="pass-input input">
+                    <input type="password" id="pass">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="pass-info info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Must be upto 8 characters and contain an uppercase and lowercase letter, a number, and a special character</p>
+                </div>
+                    
+            
+            <!-- confirm password -->
+            <div class="input5">
+                <div class="pass-confirm-text label">
+                    <label for="pass-confirm" class="label">confirm password</label>
+                    <div class="error4">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="success4">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+                <div class="pass-confirm-input input">
+                    <input type="password" id="pass-confirm">
+                </div>
+            </div>
+            <!-- phone number
+            <div class="input6">
+                <div class="first-name-text">
+                    <label for="fname">first name</label>
+                    <div class="error"></div>
+                    <div class="success"></div>
+                </div>
+                <div class="input">
+                    <input type="text" id="fname">
+                </div>
+                <div class="fname-info">
+                    <p>Only contain alphabets and must between 3 to 20 characters.</p>
+                </div>
+            </div>
+            <-- gender -->
+            <!-- <div class="input1">
+                <div class="first-name-text">
+                    <label for="fname">first name</label>
+                    <div class="error"></div>
+                    <div class="success"></div>
+                </div>
+                <div class="input">
+                    <input type="text" id="fname">
+                </div>
+                <div class="fname-info">
+                    <p>Only contain alphabets and must between 3 to 20 characters.</p>
+                </div>
+            </div> -->
+            <div class="submit">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form> 
+        
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
